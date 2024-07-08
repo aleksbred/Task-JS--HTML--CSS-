@@ -1,56 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz test</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Quiz</title>
+	<link rel="stylesheet" href="./main.css" />
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>Question 1/$</h1>
-        <form id="quiz-form">
-            <div class="question">
-                <p>Question1</p>
-                <label>
-                    <input type="radio" name="q1" value="a"> Answer1
-                </label>
-                <label>
-                    <input type="radio" name="q1" value="b"> Answer2
-                </label>
-                <label>
-                    <input type="radio" name="q1" value="c"> Answer3
-                </label>
-            </div>
-            <div class="question">
-                <p>Question2</p>
-                <label>
-                    <input type="checkbox" name="q2" value="a"> Answer1
-                </label>
-                <label>
-                    <input type="checkbox" name="q2" value="b"> Answer2
-                </label>
-                <label>
-                    <input type="checkbox" name="q2" value="c"> Answer3
-                </label>
-                <div class="question">
-                    <p>Question3</p>
-                    <label>
-                        <input type="checkbox" name="q3" value="a"> Answer1
-                    </label>
-                    <label>
-                        <input type="checkbox" name="q3" value="b"> Answer2
-                    </label>
-                    <label>
-                        <input type="checkbox" name="q3" value="c"> Answer3
-                    </label>
-                </div>
-            </div>
-        </form>
-        <div class="result"></div>
-    </div>
+	<header class="quiz" id="quiz">
+		<div class="quiz-header" id="header">
+			<!-- Блок с вопросами -->
+			<h1 class="title" id="numberQuestion">Question %numberQuestion% / %lengthQuestions%</h1>
+			<h2 class="title">Загружаем вопрос...</h2>
 
-    <script src="app.js"></script>
+			<!-- Блок результата -->
+			<h2 class="title">%title%</h2>
+			<h3 class="summary">%message%</h3>
+			<p class="result">%result%</p>
+		</div>
+
+		<ul class="quiz-list" id="list">
+		</ul>
+
+		<button class="quiz-submit submit" id="submit">Answer</button>
+
+	</header>
+
+	<script src="./main.js"></script>
 </body>
 </html>
