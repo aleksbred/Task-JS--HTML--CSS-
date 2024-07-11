@@ -9,7 +9,14 @@
     --background-gradient-start: #8EC5FC;
     --background-gradient-end: #E0C3FC;
     --box-shadow-color: rgba(100, 100, 100, 0.1);
+    --answer-right-text: rgb(36, 144, 77);
+    --answer-right-bg: rgba(36, 144, 77, 0.2);
+    --answer-false-text: rgb(218, 59, 59);
+    --answer-false-bg: rgba(218, 59, 59, 0.2);
 }
+
+
+
 
 * {
     box-sizing: border-box;
@@ -90,14 +97,14 @@ body {
 }
 
 .quiz-list label.correct {
-    color: rgb(36, 144, 77);
-    background-color: rgba(36, 144, 77, 0.2);
+    color: var(--answer-right-text);
+    background-color: var(--answer-right-bg);
     font-weight: bold;
 }
 
 .quiz-list label.wrong {
-    color: rgb(218, 59, 59);
-    background-color: rgba(218, 59, 59, 0.2);
+    color: var(--answer-false-text);
+    background-color: var(--answer-false-bg);
     font-weight: bold;
 }
 
